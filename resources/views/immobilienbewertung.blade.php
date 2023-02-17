@@ -1,8 +1,8 @@
 @extends('layout')
 @section('content')
 
-@foreach($city_data as $orte)
 @isset($ortsname)
+@foreach($city_data as $orte)
 @if($orte->stadt_umlaut == $ortsname)
 <main class="main">
             <!--==================== HOME ====================-->
