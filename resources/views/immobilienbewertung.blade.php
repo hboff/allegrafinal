@@ -1,9 +1,8 @@
 @extends('layout')
 @section('content')
 
-@isset($city_data)
-@foreach ($city_data as $ort)
-@if ($ort['stadt_umlaut'] == $ortsname)
+@foreach($city_data as $orte)
+@if($orte['stadt_umlaut'] == $ortsname)
 <main class="main">
             <!--==================== HOME ====================-->
             <section class="home" id="home">
@@ -11,7 +10,7 @@
 
                 <div class="home__container container grid">
                     <div class="home__data">
-                        <h1 class="home__data-title">Immobilienbewertung<br><b>in {{$ort['stadt']}}</b></h1>
+                        <h1 class="home__data-title">Immobilienbewertung<br><b>in {{$orte['stadt']}}</b></h1>
                        
 
                     </div>
@@ -34,5 +33,5 @@
 </main>
 @endif
 @endforeach
-@endisset
+
 @endsection
