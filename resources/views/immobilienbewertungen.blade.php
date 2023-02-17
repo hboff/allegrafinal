@@ -1,6 +1,6 @@
 @extends('layout')
 @section('content')
-
+@php
 $i=0;
     @endphp
     @foreach($city_data as $ort)
