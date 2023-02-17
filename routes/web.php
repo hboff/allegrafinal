@@ -50,9 +50,9 @@ Route::get('/datenschutzerklaerung', [OrteController::class, 'datenschutzerklaer
 Route::get('contact-us', [ContactController::class, 'index']);
 Route::post('contact-us', [ContactController::class, 'store'])->name('contact.us.store');
 
-Route::get('/{ort}/immobilienbewertung', [OrteatController::class, 'show'], function () {});
+Route::get('/immobilienbewertung/{ort}', [OrteController::class, 'show'], function () {});
    
-Route::get('/{region}/immobilienbewertungen', function($region){
+Route::get('/immobilienbewertungen/{region}', function($region){
         return view ('immobilienbewertungen', ['ortsname' => $region]);
 });
 
