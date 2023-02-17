@@ -47,4 +47,6 @@ Route::get('/impressum', [OrteController::class, 'impressum'], function () {
 });
 Route::get('/datenschutzerklaerung', [OrteController::class, 'datenschutzerklaerung'], function () {
 });
+Route::get('contact-us', [ContactController::class, 'index']);
+    Route::post('contact-us', [ContactController::class, 'store'])->name('contact.us.store');
 
