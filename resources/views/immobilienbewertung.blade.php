@@ -2,13 +2,13 @@
 @section('content')
 
 @foreach ($city_data as $ort)
-@if ($ortsname == $ort->stadt_umlaut)
+@if ($ort->stadt_umlaut == $ortsname)
 <section class="home" id="home">
                 <img src="/img/allegra.jpg" alt="" class="home__img">
 
                 <div class="home__container container grid">
                     <div class="home__data">
-                        <h1 class="home__data-title">Immobilienbewertung in {{$ort->stadt}}</b></h1>
+                        <h1 class="home__data-title">Immobilienbewertung in {{$ort->stadt}} {{$ortsname}}</b></h1>
                        
 
                     </div>
