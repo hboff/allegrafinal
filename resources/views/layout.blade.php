@@ -50,7 +50,7 @@
                         <h3 class="footer__title">Allegra Immobilienbewertung</h3>
                         <p class="footer__description">Wenn es um die Bewertung von Immobilien geht, ist Qualität der Schlüssel.
                         </p>
-                        <img src="/img/rhino.svg" alt="Allegra" style="    vertical-align: middle;
+                        <img src="/img/logo.svg" alt="Allegra" style="    vertical-align: middle;
     width: 150px;
     height: 150px;
     border-radius: 50%;
