@@ -53,7 +53,7 @@ object-position: center;">
 
                         
                     </div>
-                </div>
+                
                     <div class="footer__data">
                         
                         @php
