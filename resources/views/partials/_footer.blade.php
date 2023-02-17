@@ -6,7 +6,7 @@
                         <p class="footer__description">Wenn es um die Bewertung von Immobilien geht, ist Qualität der Schlüssel.
                         </p>
                         <img src="/img/logo.png" alt="Allegra" style="    vertical-align: middle;
-width: 80%;
+width: 75%;
 
     object-fit: cover;
 object-position: center;">
