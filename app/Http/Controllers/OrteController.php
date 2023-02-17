@@ -22,6 +22,16 @@ class OrteController extends Controller
         $status='de';
         return view ('index', compact('status'));
     }
+    
+    public function show($city_data) {
+          
+        return view('immobilienbewertung', [
+            
+            'ortsname'=> $city_data,
+            ]);    
+        }   
+
+
     public function ertragswertverfahren() {
         $status='de';
         return view ('show.ertragswertverfahren', compact('status'));
