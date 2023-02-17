@@ -42,9 +42,20 @@ object-position: center;">
                     </div>
     
                     
-    
                     <div class="footer__data">
-                        <h3 class="footer__subtitle">Weitere Standorte</h3>
+                        
+    @foreach($regions as $region)
+    @if ($region->Country == 'Germany')
+    <a class="link-dark" href="/baugutachter/{{$region->Region}}">Baugutachter {{$region->Region}}</a><br>
+    @endif
+
+    @endforeach
+
+                        
+                    </div>
+                </div>
+                    <div class="footer__data">
+                        
                         @php
     $i=0;
     @endphp
