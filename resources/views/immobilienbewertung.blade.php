@@ -1,7 +1,7 @@
 @extends('layout')
 @section('content')
 
-
+@isset($city_data)
 @foreach ($city_data as $ort)
 @if ($ort['stadt_umlaut'] == $ortsname)
 <main class="main">
@@ -34,4 +34,5 @@
 </main>
 @endif
 @endforeach
+@endisset
 @endsection
