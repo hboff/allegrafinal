@@ -50,7 +50,7 @@ object-position: center;">
     @endphp
     @foreach($city_data as $ort)
     @if ($i++ < 16)
-    <a class="link-dark" href="/{{$ort->ort}}/bausachverstaendiger">Baugutachter {{$ort['ort']}}</a><br>
+    <a class="link-dark" href="/{{$ort->stadt}}/bausachverstaendiger">Baugutachter {{$ort['stadt']}}</a><br>
     @else
     @endif
     @endforeach
