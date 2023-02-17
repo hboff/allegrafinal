@@ -42,7 +42,7 @@
 
 @yield('content')
 
-@include('partials._contact')
+
 	        <!--==================== FOOTER ====================-->
         @include('partials._footer')
 
