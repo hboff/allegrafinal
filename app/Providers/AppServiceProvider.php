@@ -21,6 +21,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        View::share('ort', Ort::all());
+        View::share('city_data', Ort::all());
     }
 }
