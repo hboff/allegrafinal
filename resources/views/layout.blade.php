@@ -53,7 +53,7 @@
                         <img src="/img/logo.svg" alt="Allegra" style="    vertical-align: middle;
     width: 150px;
     height: 150px;
-    border-radius: 50%;
+
     object-fit: cover;
 object-position: center;">
                         <div>
