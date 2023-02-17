@@ -9,7 +9,7 @@
 
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
         <link rel="stylesheet" href="https://allegra-immobilienbewertung.de/assets/css/swiper-bundle.min.css">
-        <link rel="stylesheet" href="/styles.css">
+        <link rel="stylesheet" href="https://allegra-immobilienbewertung.de/assets/css/styles.css">
 
     </head>
     <body> 
