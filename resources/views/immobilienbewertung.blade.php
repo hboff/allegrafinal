@@ -2,7 +2,8 @@
 @section('content')
 
 
-
+@foreach ($city_data as $ort)
+@if ($ort->stadt_umlaut == $ortsname)
 <main class="main">
             <!--==================== HOME ====================-->
             <section class="home" id="home">
@@ -10,7 +11,7 @@
 
                 <div class="home__container container grid">
                     <div class="home__data">
-                        <h1 class="home__data-title">Immobilienbewertung<br><b>in {{$ortsname}}</b></h1>
+                        <h1 class="home__data-title">Immobilienbewertung<br><b>in {{$ort->stadt}}</b></h1>
                        
 
                     </div>
@@ -31,5 +32,6 @@
                 </div>
             </section>
 </main>
-
+@endif
+@endforeach
 @endsection
