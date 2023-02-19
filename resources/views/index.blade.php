@@ -100,21 +100,21 @@
                 <div class="experience__container container grid">
                     <div class="experience__content grid">
                         <div class="experience__data">
-
+                                <img src="/img/location.svg" alt="Regionale Expertise">
                         <br>
 
                             <span class="experience__description">Regionale <br/>Expertise</span>
                         </div>
 
                         <div class="experience__data">
-
+                        <img src="/img/certificate.svg" alt="Zertifiziert">
                         <br>
 
                             <span class="experience__description">Zertifiziert</span>
                         </div>
-
+                        
                         <div class="experience__data">
-
+                        <img src="/img/lock.svg" alt="Unabhängige Gutachter">
                         <br>
 
                             <span class="experience__description">Unabhängige <br/>Gutachter</span>
