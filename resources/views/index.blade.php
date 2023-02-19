@@ -107,7 +107,11 @@
                         </div>
 
                         <div class="experience__data">
-                        <img src="/img/certification.svg" alt="Zertifiziert">
+                        <img src="/img/certification.svg" alt="Zertifiziert" style="    vertical-align: middle;
+width: 50px;
+height: 50px;
+    object-fit: cover;
+object-position: center;">>
                         <br>
 
                             <span class="experience__description">Zertifiziert</span>
