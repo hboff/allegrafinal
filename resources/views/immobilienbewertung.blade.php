@@ -1,4 +1,12 @@
 @extends('layout')
+
+@section('head')
+
+<title>Immobilienbewertung {{$ortsname}}</title>
+<meta name="Description" content="Sachverständiger Immobilienbewertung {{$ortsname}} ▶ Kostenlose Beratung ✔ TÜV zertifizierte Gutachter ✔ Festpreise  ✔ Kurzfristige Termine ✔ Verkehrswertgutachten ✔">
+
+@endsection
+
 @section('content')
 
 <main class="main">

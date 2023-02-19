@@ -1,4 +1,8 @@
 @extends('layout')
+@section('head')
+<title>Immobilienbewertung Sachwertverfahren</title>
+<meta name="Description" content="Das Sachwertverfahren zur Bewertung von Immobilien vortgestellt.">
+@endsection
 @section('content')
 <section class="home" id="home">
                 <img src="/img/allegra.jpg" alt="" class="home__img">

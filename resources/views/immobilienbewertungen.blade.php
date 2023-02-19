@@ -1,4 +1,9 @@
 @extends('layout')
+@section('head')
+<title>Immobilienbewertung {{$ortsname}}</title>
+<meta name="Description" content="Immobilienbewertungen in {{$ortsname}} ">
+@endsection
+
 @section('content')
 <section class="home" id="home">
                 <img src="/img/allegra.jpg" alt="" class="home__img">

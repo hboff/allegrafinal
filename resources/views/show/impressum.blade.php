@@ -1,4 +1,8 @@
 @extends('layout')
+@section('head')
+<title>Impressum</title>
+<meta name="Description" content="Impressum Allegra">
+@endsection
 @section('content')
 <section class="home" id="home">
                 <img src="/img/allegra.jpg" alt="" class="home__img">

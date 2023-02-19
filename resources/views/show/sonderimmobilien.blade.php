@@ -1,4 +1,8 @@
 @extends('layout')
+@section('head')
+<title>Immobilienbewertung Sonderimmobilien</title>
+<meta name="Description" content="Immobilienbewertung von Sonderimmobilien durch einen Sachverständigen.">
+@endsection
 @section('content')
 <section class="home" id="home">
                 <img src="/img/allegra.jpg" alt="" class="home__img">
