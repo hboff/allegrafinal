@@ -107,7 +107,7 @@
                         </div>
 
                         <div class="experience__data">
-                        <img src="/img/certificate.svg" alt="Zertifiziert">
+                        <img src="/img/certification.svg" alt="Zertifiziert">
                         <br>
 
                             <span class="experience__description">Zertifiziert</span>
