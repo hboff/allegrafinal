@@ -100,7 +100,7 @@
                 <div class="experience__container container grid">
                     <div class="experience__content grid">
                         <div class="experience__data">
-                                <img class="experience__description" src="/img/location.svg" alt="Regionale Expertise" style="
+                                <img src="/img/location.svg" alt="Regionale Expertise" style="object-position: center;
 width: 100px;
 height: 100px;
 ">
@@ -110,7 +110,7 @@ height: 100px;
                         </div>
 
                         <div class="experience__data">
-                        <img  class="experience__description" src="/img/certification.svg" alt="Zertifiziert" style="
+                        <img src="/img/certification.svg" alt="Zertifiziert" style="object-position: center;
 width: 100px;
 height: 100px;
 ">
@@ -120,7 +120,7 @@ height: 100px;
                         </div>
                         
                         <div class="experience__data">
-                        <img class="experience__description" src="/img/lock.svg" alt="Unabhängige Gutachter" style="
+                        <img src="/img/lock.svg" alt="Unabhängige Gutachter" style="object-position: center;
 width: 100px;
 height: 100px;
 ">
