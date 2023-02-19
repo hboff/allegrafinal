@@ -27,8 +27,13 @@
                 </div>
             </section>
             <section class="container"> 
-                <p>Das Sachwertverfahren ist ein Verfahren zur Wertermittlung von Immobilien und ist in Deutschland durch die §§ 21 bis 23 ImmoWertV geregelt.</p>
-<p>Diese Verfahren wird zur neutralen Bewertung einer eigen genutzten Immobilie verwendet.</p>
+                <p>Das Sachwertverfahren ist ein Verfahren zur Ermittlung des Verkehrswerts einer Immobilie. Es beruht auf der Summe der Herstellungskosten abzüglich der Alterswertminderung und der technischen Wertverbesserung.</p>
+                <p>Beim Sachwertverfahren wird der Verkehrswert der Immobilie anhand der Herstellungskosten ermittelt, die notwendig wären, um das Objekt neu zu errichten. Die Herstellungskosten umfassen dabei sowohl die Kosten für das Grundstück als auch für das Gebäude. Um den aktuellen Sachwert zu ermitteln, müssen die Herstellungskosten allerdings um die Alterswertminderung und die technische Wertverbesserung angepasst werden.</p>
+                <p>Die Alterswertminderung berücksichtigt den Wertverlust der Immobilie aufgrund ihres Alters und ihres Zustands. Die technische Wertverbesserung hingegen berücksichtigt den Wertzuwachs, der durch Modernisierungsmaßnahmen oder den Einbau von neuen technischen Einrichtungen entstanden ist.</p>
+                <p>Das Sachwertverfahren eignet sich insbesondere für die Bewertung von Immobilien, die nicht vergleichbar sind oder für die es keine ausreichende Anzahl an Vergleichsobjekten gibt. Es wird oft für Gewerbeimmobilien, Industrieanlagen oder besondere Immobilien wie Kirchen oder Denkmäler angewendet.</p>
+                <p>Bei der Anwendung des Sachwertverfahrens ist es wichtig, dass der Gutachter über umfangreiche Kenntnisse in der Bautechnik und im Bauwesen verfügt. Denn die Ermittlung der Herstellungskosten erfordert eine genaue Kenntnis der Baupreise und Baukosten.</p>
+                <p>Das Sachwertverfahren ist ein anerkanntes Verfahren, das von Gerichten und Finanzbehörden zur Ermittlung des Verkehrswerts herangezogen wird. Allerdings ist es wichtig zu beachten, dass es bei der Anwendung des Sachwertverfahrens zu höheren Werten kommen kann als bei anderen Verfahren, da es auf den Herstellungskosten basiert.</p>
+                <p>Insgesamt bietet das Sachwertverfahren eine präzise und objektive Methode zur Bestimmung des Verkehrswerts einer Immobilie. Allerdings ist es wichtig, dass das Verfahren unter Berücksichtigung aller relevanten Faktoren durchgeführt wird, um ein realistisches Ergebnis zu erzielen.</p>
             </section>
 @endsection
 
