@@ -5,7 +5,7 @@
     @endphp
     @foreach($ort as $orte)
     @if ($i++ < 50)
-    <a class="link-dark" href="/{{$orte->stadt_umlaut}}/immobilienbewertung">Immobilienbewertung {{$orte['stadt_lang']}}</a>
+    <a class="link-dark" href="/{{$orte->ort}}/immobilienbewertung">Immobilienbewertung {{$orte['ort']}}</a>
     @else
     @endif
     @endforeach

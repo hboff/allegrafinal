@@ -23,10 +23,10 @@ class OrteController extends Controller
         return view ('index', compact('status'));
     }
 
-    public function show($city_data) {
+    public function show($orteDE) {
           
         return view('immobilienbewertung', [
-            'ortsname'=> $city_data,
+            'ortsname'=> $orteDE,
             ]);    
         }   
 

@@ -3,9 +3,9 @@
 @php
 $i=0;
     @endphp
-    @foreach($city_data as $ort)
-    @if ($i++ < 50)
-    <a class="footer__link" href="/{{$ort->stadt_umlaut}}/immobilienbewertung">Immobilienbewertung {{$ort['stadt']}}</a><br>
+    @foreach($orteDE as $ort)
+    @if($ort->bundesland == $ortsname)
+    <a class="footer__link" href="/{{$ort->ort}}/immobilienbewertung">Immobilienbewertung {{$ort['ort']}}</a><br>
     @else
     @endif
     @endforeach
