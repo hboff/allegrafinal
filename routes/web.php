@@ -52,7 +52,7 @@ Route::post('contact-us', [ContactController::class, 'store'])->name('contact.us
 
 Route::get('/immobilienbewertung/{ort}', [OrteController::class, 'show']);
    
-Route::get('/immobilienbewertungen/{region}', function($region){
+Route::get('/{region}', function($region){
         return view ('immobilienbewertungen', ['ortsname' => $region]);
 });
 
