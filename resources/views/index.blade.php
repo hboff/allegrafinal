@@ -106,11 +106,11 @@ height: 100px;
 ">
                         <br>
 
-                            <span class="experience__description">Regionale <br/>Expertise</span>
+                            <span class="experience__description" style="  text-align: center;">Regionale <br/>Expertise</span>
                         </div>
 
                         <div class="experience__data">
-                        <img src="/img/certification.svg" alt="Zertifiziert" style="object-position: left;
+                        <img src="/img/certification.svg" alt="Zertifiziert" style="object-position: center;
 width: 100px;
 height: 100px;
 ">
@@ -120,7 +120,7 @@ height: 100px;
                         </div>
                         
                         <div class="experience__data">
-                        <img src="/img/lock.svg" alt="Unabhängige Gutachter" style="object-position: left;
+                        <img src="/img/lock.svg" alt="Unabhängige Gutachter" style="object-position: center;
 width: 100px;
 height: 100px;
 ">
