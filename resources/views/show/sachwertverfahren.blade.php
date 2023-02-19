@@ -27,6 +27,7 @@
                 </div>
             </section>
             <section class="container"> 
+                <h2>Das Sachwertverfahren</h2>
                 <p>Das Sachwertverfahren ist ein Verfahren zur Ermittlung des Verkehrswerts einer Immobilie. Es beruht auf der Summe der Herstellungskosten abzüglich der Alterswertminderung und der technischen Wertverbesserung.</p>
                 <p>Beim Sachwertverfahren wird der Verkehrswert der Immobilie anhand der Herstellungskosten ermittelt, die notwendig wären, um das Objekt neu zu errichten. Die Herstellungskosten umfassen dabei sowohl die Kosten für das Grundstück als auch für das Gebäude. Um den aktuellen Sachwert zu ermitteln, müssen die Herstellungskosten allerdings um die Alterswertminderung und die technische Wertverbesserung angepasst werden.</p>
                 <p>Die Alterswertminderung berücksichtigt den Wertverlust der Immobilie aufgrund ihres Alters und ihres Zustands. Die technische Wertverbesserung hingegen berücksichtigt den Wertzuwachs, der durch Modernisierungsmaßnahmen oder den Einbau von neuen technischen Einrichtungen entstanden ist.</p>
