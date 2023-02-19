@@ -100,25 +100,33 @@
                 <div class="experience__container container grid">
                     <div class="experience__content grid">
                         <div class="experience__data">
-                                <img src="/img/location.svg" alt="Regionale Expertise">
+                                <img src="/img/location.svg" alt="Regionale Expertise" style="vertical-align: middle;
+width: 100px;
+height: 100px;
+    object-fit: cover;
+object-position: center;">
                         <br>
 
                             <span class="experience__description">Regionale <br/>Expertise</span>
                         </div>
 
                         <div class="experience__data">
-                        <img src="/img/certification.svg" alt="Zertifiziert" style="    vertical-align: middle;
-width: 50px;
-height: 50px;
+                        <img src="/img/certification.svg" alt="Zertifiziert" style="vertical-align: middle;
+width: 100px;
+height: 100px;
     object-fit: cover;
-object-position: center;">>
+object-position: center;">
                         <br>
 
                             <span class="experience__description">Zertifiziert</span>
                         </div>
                         
                         <div class="experience__data">
-                        <img src="/img/lock.svg" alt="Unabhängige Gutachter">
+                        <img src="/img/lock.svg" alt="Unabhängige Gutachter" style="vertical-align: middle;
+width: 100px;
+height: 100px;
+    object-fit: cover;
+object-position: center;">
                         <br>
 
                             <span class="experience__description">Unabhängige <br/>Gutachter</span>
