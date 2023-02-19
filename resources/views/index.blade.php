@@ -106,7 +106,7 @@ height: 100px;
 ">
                         <br>
 
-                            <span class="experience__description">Regionale <br/>Expertise</span>
+                            <span>Regionale <br/>Expertise</span>
                         </div>
 
                         <div class="experience__data">
