@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('head')
-<title>Immobilienbewertung {{$ortsname}}</title>
+<title>Immobilienbewertung Duisburg</title>
 <meta name="Description" content="Sachverständiger Immobilienbewertung Duisburg ▶ Kostenlose Beratung ✔ TÜV zertifizierte Gutachter ✔ Festpreise  ✔ Kurzfristige Termine ✔ Verkehrswertgutachten ✔">
 @endsection
 
