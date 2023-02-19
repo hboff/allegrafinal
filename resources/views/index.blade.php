@@ -107,7 +107,7 @@ height: 100px;
 object-position: center;">
                         <br>
 
-                            <span class="experience__description">Regionale <br/>Expertise</span>
+                            <span class="experience__description" style="vertical-align: middle;">Regionale <br/>Expertise</span>
                         </div>
 
                         <div class="experience__data">
@@ -118,7 +118,7 @@ height: 100px;
 object-position: center;">
                         <br>
 
-                            <span class="experience__description">Zertifiziert</span>
+                            <span class="experience__description" style="vertical-align: middle;">Zertifiziert</span>
                         </div>
                         
                         <div class="experience__data">
@@ -129,7 +129,7 @@ height: 100px;
 object-position: center;">
                         <br>
 
-                            <span class="experience__description">Unabhängige <br/>Gutachter</span>
+                            <span class="experience__description" style="vertical-align: middle;">Unabhängige <br/>Gutachter</span>
                         </div>
                     </div>
 
