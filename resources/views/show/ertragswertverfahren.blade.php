@@ -26,7 +26,16 @@
                 </div>
             </section>
             <section class="container"> 
-            <p>Das Ertragswertverfahren dient der Ermittlung des Ertragswertes von Renditeobjekten.</p>
-<p>Diese Verfahren wird bei der Immobilienbewertung beispielsweise bei Mietobjekten verwendet.</p>
+            <h2>Das Ertragswertverfahren</h2>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
             </section>
 @endsection
