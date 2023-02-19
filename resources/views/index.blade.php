@@ -103,33 +103,30 @@
                                 <img src="/img/location.svg" alt="Regionale Expertise" style="vertical-align: middle;
 width: 100px;
 height: 100px;
-    object-fit: cover;
-object-position: center;">
+">
                         <br>
 
-                            <span class="experience__description" style="vertical-align: middle;">Regionale <br/>Expertise</span>
+                            <span class="experience__description">Regionale <br/>Expertise</span>
                         </div>
 
                         <div class="experience__data">
                         <img src="/img/certification.svg" alt="Zertifiziert" style="vertical-align: middle;
 width: 100px;
 height: 100px;
-    object-fit: cover;
-object-position: center;">
+">
                         <br>
 
-                            <span class="experience__description" style="vertical-align: middle;">Zertifiziert</span>
+                            <span class="experience__description">Zertifiziert</span>
                         </div>
                         
                         <div class="experience__data">
                         <img src="/img/lock.svg" alt="Unabhängige Gutachter" style="vertical-align: middle;
 width: 100px;
 height: 100px;
-    object-fit: cover;
-object-position: center;">
+">
                         <br>
 
-                            <span class="experience__description" style="vertical-align: middle;">Unabhängige <br/>Gutachter</span>
+                            <span class="experience__description">Unabhängige <br/>Gutachter</span>
                         </div>
                     </div>
 
