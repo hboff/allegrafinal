@@ -110,7 +110,7 @@ height: 100px;
                         </div>
 
                         <div class="experience__data">
-                        <img src="/img/certification.svg" alt="Zertifiziert" style="object-position: center;
+                        <img src="/img/certification.svg" alt="Zertifiziert" style="object-position: left;
 width: 100px;
 height: 100px;
 ">
@@ -120,7 +120,7 @@ height: 100px;
                         </div>
                         
                         <div class="experience__data">
-                        <img src="/img/lock.svg" alt="Unabhängige Gutachter" style="object-position: center;
+                        <img src="/img/lock.svg" alt="Unabhängige Gutachter" style="object-position: left;
 width: 100px;
 height: 100px;
 ">
