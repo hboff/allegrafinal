@@ -12,32 +12,7 @@ class OrteController extends Controller
 {
     // Show single lisitng
     public function show($orteDE) {
-        
-        $domains = [
-            'immobilienbewertung-duisburg.com' => [
-                'laengengrad' => [1.0, 12.0],
-                'breitengrad' => [10.0, 52.0],
-            ],
-            'xyz.eu' => [
-                'laengengrad' => [1.0, 12.0],
-                'breitengrad' => [10.0, 52.0],
-            ],
-        ];
-        
-        
-        foreach ($domains as $domain => $domainData) {
-     
-        $data = DB::table('orteDE')
-        ->whereBetween('laengengrad', $domainData['laengengrad'])
-        ->whereBetween('breitengrad', $domainData['breitengrad'])
-        ->get();
-      
-        $expert = DB::table('orteDE')
-                 ->join('gutachter', function($join) {
-                     $join->on('orteDE.laengengrad', '>=', 'gutachter.Lon')
-                          ->on('orteDE.laengengrad', '<=', 'gutachter.Lon2');
-                 })
-                 ->get();
+            
         
         $cityData = DB::table('orteDE')->select('laengengrad', 'breitengrad')->where('ort', $orteDE)->first();
         $laengengrad = $cityData->laengengrad;
@@ -62,8 +37,6 @@ class OrteController extends Controller
       
         return view('immobilienbewertung', [
             'nearestCities' => $nearestCities,
-            'expert' => $expert,
-            'data' => $data,
             'ortsname'=> $orteDE,
             ]);    }  
         }       
