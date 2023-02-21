@@ -42,8 +42,7 @@ $routes = [
     foreach ($domains as $domain => $domainData) {
     Route::domain($domain)->group(function () use ($routes, $domainData) {
         Route::get('/', [OrteController::class, 'index']);
-        Route::get('/{ort}/immobilienbewertung', [OrteController::class, 'show'], function () use ($domainData) {})
-        ->middleware('cache.headers:private;max_age=3600');
+        Route::get('/{ort}/immobilienbewertung', [OrteController::class, 'show'], function () use ($domainData) {});
         Route::get('/{region}', function($region){
                 return view ('immobilienbewertungen', ['ortsname' => $region]);
         });
