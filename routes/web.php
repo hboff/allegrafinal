@@ -26,7 +26,6 @@ $routes = [
         'ueber-uns',
         'impressum',
         'datenschutzerklaerung',
-        'impressum',
     ];
     
     $domains = [

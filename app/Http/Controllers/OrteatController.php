@@ -12,7 +12,6 @@ class OrteatController extends Controller
 {
     // Show single lisitng
     public function show($orteDE) {
-        $status='at';
         
         $domains = [
             'immobilienbewertung-duisburg.com' => [
