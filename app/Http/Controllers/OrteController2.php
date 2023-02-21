@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 use Illuminate\Support\Facades\DB;
 
-class OrteController extends Controller
+class OrteatController extends Controller
 {
     // Show single lisitng
    // public function show($ort) {
