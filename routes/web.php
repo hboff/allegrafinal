@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\OrteController;
+use App\Http\Controllers\OrteatController;
 use App\Http\Controllers\ContactController;
 /*
 |--------------------------------------------------------------------------
