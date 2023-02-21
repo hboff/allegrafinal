@@ -11,29 +11,16 @@ use Illuminate\Support\Facades\DB;
 class OrteatController extends Controller
 {
     // Show single lisitng
-    public function show($ortat) {
+    public function show($orteDE) {
         $status='at';
         
-
         $domains = [
-            'immobilienbewertung-bielefeld.com' => [
+            'immobilienbewertung-duisburg.com' => [
                 'laengengrad' => [1.0, 12.0],
                 'breitengrad' => [10.0, 52.0],
             ],
-            'immobilienbewertung-wuppertal.eu' => [
+            'xyz.eu' => [
                 'laengengrad' => [1.0, 12.0],
-                'breitengrad' => [10.0, 52.0],
-            ],
-            'baucampus.at' => [
-                'laengengrad' => [1.0, 12.0],
-                'breitengrad' => [10.0, 52.0],
-            ],
-            'baucampus.be' => [
-                'laengengrad' => [1.0, 12.0],
-                'breitengrad' => [10.0, 52.0],
-            ],
-            'baucampus.nl' => [
-                'laengengrad' => [52.0, 53.0],
                 'breitengrad' => [10.0, 52.0],
             ],
         ];
@@ -74,11 +61,11 @@ class OrteatController extends Controller
         "), [$breitengrad, $laengengrad, $breitengrad]);
 
       
-        return view('unterseiten.bausachverstaendiger', [
+        return view('immobilienbewertung', [
             'nearestCities' => $nearestCities,
             'expert' => $expert,
             'data' => $data,
-            'ortsname'=> $ortat,
+            'ortsname'=> $orteDE,
             ]);    }  
         }       
         

@@ -15,7 +15,6 @@ use App\Http\Controllers\ContactController;
 */
 
 $routes = [
-        'schimmelpilz',
         'gewerbeimmobilien',
         'grundstuecke-und-rechte',
         'landwirtschaftliche-immobilien',
@@ -44,7 +43,7 @@ $routes = [
     foreach ($domains as $domain => $domainData) {
     Route::domain($domain)->group(function () use ($routes, $domainData) {
         Route::get('/', [OrteatController::class, 'index']);
-        Route::get('/immobilienbewertung/{ort}', [OrteController::class, 'show']);
+        Route::get('/immobilienbewertung/{ort}', [OrteatController::class, 'show']);
         Route::get('/{region}', function($region){
                 return view ('immobilienbewertungen', ['ortsname' => $region]);
         });
