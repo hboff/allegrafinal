@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\OrteatController;
+use App\Http\Controllers\OrteController;
 use App\Http\Controllers\ContactController;
 /*
 |--------------------------------------------------------------------------
@@ -41,8 +41,8 @@ $routes = [
     
     foreach ($domains as $domain => $domainData) {
     Route::domain($domain)->group(function () use ($routes, $domainData) {
-        Route::get('/', [OrteatController::class, 'index']);
-        Route::get('/immobilienbewertung/{ort}', [OrteatController::class, 'show']);
+        Route::get('/', [OrteController::class, 'index']);
+        Route::get('/immobilienbewertung/{ort}', [OrteController::class, 'show']);
         Route::get('/{region}', function($region){
                 return view ('immobilienbewertungen', ['ortsname' => $region]);
         });
