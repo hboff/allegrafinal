@@ -38,8 +38,7 @@ class OrteController extends Controller
         return view('immobilienbewertung', [
             'nearestCities' => $nearestCities,
             'ortsname'=> $orteDE,
-            ]);    }  
-        }       
+            ]);    }     
         
     public function index() {
         $status='at';
