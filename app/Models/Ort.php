@@ -9,4 +9,6 @@ class Ort extends Model
 
 
      protected $table = 'orteDE';
+     protected $fillable = ['ort'];
+
 }

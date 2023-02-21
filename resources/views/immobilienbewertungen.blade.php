@@ -33,7 +33,7 @@
 @php
 $i=0;
     @endphp
-    @foreach($orteDE as $ort)
+    @foreach($ortDE as $ort)
     @if($ort->bundesland == $ortsname)
     <a href="/{{$ort->ort}}/immobilienbewertung">Immobilienbewertung {{$ort['ort']}}</a><br>
     @else
