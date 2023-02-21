@@ -39,7 +39,7 @@ class OrteController extends Controller
                  })
                  ->get();
         
-        $cityData = DB::table('orteDE')->select('laengengrad', 'breitengrad')->where('ort', $ortDE)->first();
+        $cityData = DB::table('orteDE')->select('laengengrad', 'breitengrad')->where('ort', $orteDE)->first();
         $laengengrad = $cityData->laengengrad;
         $breitengrad = $cityData->breitengrad;
 
@@ -60,11 +60,11 @@ class OrteController extends Controller
         "), [$breitengrad, $laengengrad, $breitengrad]);
 
       
-        return view('show.immobilienbewertung', [
+        return view('immobilienbewertung', [
             'nearestCities' => $nearestCities,
             'expert' => $expert,
             'data' => $data,
-            'ortsname'=> $ortDE,
+            'ortsname'=> $orteDE,
             ]);    }  
         }       
         
