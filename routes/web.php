@@ -51,7 +51,7 @@ $routes = [
         Route::post('contact-us', [ContactController::class, 'store'])->name('contact.us.store');
     foreach ($routes as $route) {
     Route::get($route, function () use ($route, $domainData) {
-    $data = DB::table('orteat')
+    $data = DB::table('orteDE')
     ->whereBetween('laengengrad', $domainData['laengengrad'])
     ->whereBetween('breitengrad', $domainData['breitengrad'])
     ->get();
@@ -64,10 +64,10 @@ $routes = [
     //The result of the join is a single table that includes all columns from both the orteat and gutachter tables. The columns from the orteat table will have the same values for each row, while the name column from the gutachter table will have different values for each row, depending on the matching breitengrad value.
     
     //HIER DIE WHEREBETWEEEN VON $data in $expert einfügen --> denke ich
-    $expert = $data = DB::table('orteat')
+    $expert = $data = DB::table('orteDE')
                ->join('gutachter', function($join) {
-                   $join->on('orteat.laengengrad', '>=', 'gutachter.Lon')
-                        ->on('orteat.laengengrad', '<=', 'gutachter.Lon2');
+                   $join->on('orteDE.laengengrad', '>=', 'gutachter.Lon')
+                        ->on('orteDE.laengengrad', '<=', 'gutachter.Lon2');
                })
                ->get();
                

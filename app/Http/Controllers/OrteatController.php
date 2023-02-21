@@ -28,19 +28,19 @@ class OrteatController extends Controller
         
         foreach ($domains as $domain => $domainData) {
      
-        $data = DB::table('orteat')
+        $data = DB::table('orteDE')
         ->whereBetween('laengengrad', $domainData['laengengrad'])
         ->whereBetween('breitengrad', $domainData['breitengrad'])
         ->get();
       
-        $expert = DB::table('orteat')
+        $expert = DB::table('orteDE')
                  ->join('gutachter', function($join) {
-                     $join->on('orteat.laengengrad', '>=', 'gutachter.Lon')
-                          ->on('orteat.laengengrad', '<=', 'gutachter.Lon2');
+                     $join->on('orteDE.laengengrad', '>=', 'gutachter.Lon')
+                          ->on('orteDE.laengengrad', '<=', 'gutachter.Lon2');
                  })
                  ->get();
         
-        $cityData = DB::table('orteat')->select('laengengrad', 'breitengrad')->where('ort', $orteDE)->first();
+        $cityData = DB::table('orteDE')->select('laengengrad', 'breitengrad')->where('ort', $orteDE)->first();
         $laengengrad = $cityData->laengengrad;
         $breitengrad = $cityData->breitengrad;
 
