@@ -60,7 +60,7 @@ class OrteController extends Controller
         "), [$breitengrad, $laengengrad, $breitengrad]);
 
       
-        return view('immobilienbewertung', [
+        return view('show.immobilienbewertung', [
             'nearestCities' => $nearestCities,
             'expert' => $expert,
             'data' => $data,
