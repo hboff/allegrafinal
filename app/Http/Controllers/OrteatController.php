@@ -40,7 +40,7 @@ class OrteatController extends Controller
                  })
                  ->get();
         
-        $cityData = DB::table('orteat')->select('laengengrad', 'breitengrad')->where('ort', $ortat)->first();
+        $cityData = DB::table('orteat')->select('laengengrad', 'breitengrad')->where('ort', $orteDE)->first();
         $laengengrad = $cityData->laengengrad;
         $breitengrad = $cityData->breitengrad;
 
@@ -54,7 +54,7 @@ class OrteatController extends Controller
                     * sin( radians( breitengrad ) )
                 )
             ) AS distance
-            FROM orteat
+            FROM orteDE
             HAVING distance < 50
             ORDER BY distance
             LIMIT 0 , 16
