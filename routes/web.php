@@ -38,7 +38,7 @@ $routes = [
         ],
     ];
     Route::get('/verkehrswertverfahren', function(){
-        return view ('verkehrswertverfahren')
+        return view ('verkehrswertverfahren');
     });
     foreach ($domains as $domain => $domainData) {
     Route::domain($domain)->group(function () use ($routes, $domainData) {
