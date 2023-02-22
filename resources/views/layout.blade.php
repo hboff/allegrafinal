@@ -44,11 +44,7 @@
 
 
 	        <!--==================== FOOTER ====================-->
-@if(str_contains(url()->current(), "/immobilienbewertung/"))
-@include('partials._footer2')
-@else
-@include('partials._footer')
-@endif
+
 
         <a href="#" class="scrollup" id="scroll-up">
             <i class="ri-arrow-up-line scrollup__icon"></i>
