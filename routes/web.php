@@ -61,7 +61,8 @@ $routes = [
         ->whereBetween('Lon2', $domainData['laengengrad'])
         ->get();
     
-    $combinedData = $data->join('gutachter', 'orteDE.laengengrad', '>=', 'gutachter.Lon')
+    $combinedData = $data
+    ->join('gutachter', 'orteDE.laengengrad', '>=', 'gutachter.Lon')
                           ->on('orteDE.laengengrad', '<=', 'gutachter.Lon2')
                           ->get();
     
