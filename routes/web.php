@@ -14,65 +14,47 @@ use App\Http\Controllers\ContactController;
 |
 */
 
-$routes = [
-        'gewerbeimmobilien',
-        'grundstuecke-und-rechte',
-        'landwirtschaftliche-immobilien',
-        'sonderimmobilien',
-        'wohnimmobilien',
-        'sachwertverfahren',
-        'ertragswertverfahren',
-        'ueber-uns',
-        'impressum',
-        'datenschutzerklaerung',
-    ];
-    
-    $domains = [
-        'immobilienbewertung-duisburg.com' => [
-            'laengengrad' => [1.0, 12.0],
-            'breitengrad' => [10.0, 52.0],
-        ],
-        'xyz.eu' => [
-            'laengengrad' => [1.0, 12.0],
-            'breitengrad' => [10.0, 52.0],
-        ],
-    ];
-    Route::get('/verkehrswertverfahren', function(){
-        return view ('verkehrswertverfahren');
-    });
-    foreach ($domains as $domain => $domainData) {
-    Route::domain($domain)->group(function () use ($routes, $domainData) {
-        Route::get('/', [OrteController::class, 'index']);
-        Route::get('/immobilienbewertung/{ort}', [OrteController::class, 'show'], function () use ($domainData) {});
-        Route::get('/immobilienbewertungen/{region}', function($region){
-                return view ('immobilienbewertungen', ['ortsname' => $region]);
-        });
-        Route::get('contact-us', [ContactController::class, 'index']);
-        Route::post('contact-us', [ContactController::class, 'store'])->name('contact.us.store');
-    foreach ($routes as $route) {
-    Route::get($route, function () use ($route, $domainData) {
-        $data = DB::table('orteDE')
-        ->whereBetween('laengengrad', $domainData['laengengrad'])
-        ->whereBetween('breitengrad', $domainData['breitengrad'])
-        ->get();
-    
-    $expert = DB::table('gutachter')
-        ->whereBetween('Lon', $domainData['laengengrad'])
-        ->whereBetween('Lon2', $domainData['laengengrad'])
-        ->get();
-    
-    $combinedData = $data
-    ->join('gutachter', 'orteDE.laengengrad', '>=', 'gutachter.Lon')
-                          ->on('orteDE.laengengrad', '<=', 'gutachter.Lon2')
-                          ->get();
-    
-    return view($route, ['data' => $data, 'expert' => $expert, 'combinedData' => $combinedData]);
-    });
-    }
-    });
-    }
+Route::get('/schimmelpilz', [OrteController::class, 'schimmelpilz'], function () {
+});
 
+Route::get('/', [OrteController::class, 'index'], function () {
+});
+Route::get('/gewerbeimmobilien', [OrteController::class, 'gewerbeimmobilien'], function () {
+});
 
+Route::get('/grundstuecke-und-rechte', [OrteController::class, 'grundstuecke'], function () {
+});
+
+Route::get('/landwirtschaftliche-immobilien', [OrteController::class, 'landwirtschaftliche'], function () {
+});
+
+Route::get('/sonderimmobilien', [OrteController::class, 'sonderimmobilien'], function () {
+});
+
+Route::get('/wohnimmobilien', [OrteController::class, 'wohnimmobilien'], function () {
+});
+Route::get('/verkehrswertverfahren', [OrteController::class, 'verkehrswertverfahren'], function () {
+});
+Route::get('/sachwertverfahren', [OrteController::class, 'sachwertverfahren'], function () {
+});
+
+Route::get('/ertragswertverfahren', [OrteController::class, 'ertragswertverfahren'], function () {
+});
+
+Route::get('/ueber-uns', [OrteController::class, 'ueberuns'], function () {
+});
+Route::get('/impressum', [OrteController::class, 'impressum'], function () {
+});
+Route::get('/datenschutzerklaerung', [OrteController::class, 'datenschutzerklaerung'], function () {
+});
+Route::get('contact-us', [ContactController::class, 'index']);
+Route::post('contact-us', [ContactController::class, 'store'])->name('contact.us.store');
+
+Route::get('/immobilienbewertung/{ort}', [OrteController::class, 'show']);
+
+Route::get('/immobilienbewertungen/{region}', function($region){
+        return view ('immobilienbewertungen', ['ortsname' => $region]);
+});
 
 
 
