@@ -36,7 +36,6 @@ class OrteController extends Controller
       
         return view('immobilienbewertung', [
             'nearestCities' => $nearestCities,
-  
             'ortsname'=> $ortDE,
             ]);    }  
         
