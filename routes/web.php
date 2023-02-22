@@ -20,7 +20,6 @@ $routes = [
         'landwirtschaftliche-immobilien',
         'sonderimmobilien',
         'wohnimmobilien',
-        'verkehrswertverfahren',
         'sachwertverfahren',
         'ertragswertverfahren',
         'ueber-uns',
@@ -38,7 +37,9 @@ $routes = [
             'breitengrad' => [10.0, 52.0],
         ],
     ];
-    
+    Route::get('/verkehrswertverfahren', function(){
+        return view ('verkehrswertverfahren')
+    });
     foreach ($domains as $domain => $domainData) {
     Route::domain($domain)->group(function () use ($routes, $domainData) {
         Route::get('/', [OrteController::class, 'index']);
