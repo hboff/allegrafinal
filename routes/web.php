@@ -20,7 +20,7 @@ $routes = [
 ];
 
 $domains = [
-    'immobilienbewertung-bielefeld.com' => [
+    'immobilienbewertung-duisburg.com' => [
         'laengengrad' => [1.0, 12.0],
         'breitengrad' => [10.0, 52.0],
     ],
@@ -28,18 +28,7 @@ $domains = [
         'laengengrad' => [1.0, 12.0],
         'breitengrad' => [10.0, 52.0],
     ],
-    'baucampus.at' => [
-        'laengengrad' => [1.0, 12.0],
-        'breitengrad' => [10.0, 52.0],
-    ],
-    'baucampus.be' => [
-        'laengengrad' => [1.0, 12.0],
-        'breitengrad' => [10.0, 52.0],
-    ],
-    'baucampus.nl' => [
-        'laengengrad' => [52.0, 53.0],
-        'breitengrad' => [10.0, 52.0],
-    ],
+    
 ];
 
 
