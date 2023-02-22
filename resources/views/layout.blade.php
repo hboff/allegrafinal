@@ -44,7 +44,7 @@
 
 
 	        <!--==================== FOOTER ====================-->
-@if(str_contains(url()->current(), "/immobilienbewertung"))
+@if(str_contains(url()->current(), "/immobilienbewertung/"))
 @include('partials._footer2')
 @else
 @include('partials._footer')

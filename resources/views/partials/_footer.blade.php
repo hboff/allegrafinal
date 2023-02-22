@@ -61,7 +61,7 @@ object-position: center;">
     @endphp
     @foreach($ortDE as $ort)
     @if ($i++ < 16)
-    <a class="footer__link" href="/{{$ort->ort}}/immobilienbewertung">Immobilienbewertung {{$ort['ort']}}</a><br>
+    <a class="footer__link" href="/immobilienbewertung/{{$ort->ort}}">Immobilienbewertung {{$ort['ort']}}</a><br>
     @else
     @endif
     @endforeach
