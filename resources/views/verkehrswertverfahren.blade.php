@@ -11,7 +11,7 @@
                     <div class="home__data">
                         <h1 class="home__data-title">Verkehrswertverfahren</h1>
                     </div>
-
+                    <h2>Das Verkehrswertverfahren</h2>
                     <div class="home__social pb-5 mb-5">
                         <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
                             <i class="ri-facebook-box-fill"></i>
