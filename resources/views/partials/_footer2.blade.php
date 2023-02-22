@@ -55,10 +55,10 @@ object-position: center;">
                     </div>
                 
                     <div class="footer__data">
- @isset('$ortsname')
+@isset('$ortsname')
 @isset ($nearestCities)
 @foreach ($nearestCities as $city)
-@if( $ortsname == $city->ort)
+@if($ortsname == $city->ort)
 @else
 <a href="/{{$city->ort}}/immobilienbewertung" class="link-dark">Immobilienbewertung {{$city->ort}}</a>
 @endif
