@@ -55,7 +55,7 @@ object-position: center;">
                     </div>
                 
                     <div class="footer__data">
-@isset('$ortsname')
+@isset($ortsname)
 @isset ($nearestCities)
 @foreach ($nearestCities as $city)
 @if($ortsname == $city->ort)
