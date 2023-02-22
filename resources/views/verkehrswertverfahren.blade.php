@@ -25,7 +25,7 @@
                     </div>                  
                 </div>
             </section>
-            <section class="container"> 
+            <div class="container"> 
                 <h2>Das Verkehrswertverfahren</h2>
             <p>Das Verkehrswertverfahren ist ein Verfahren zur Ermittlung des Verkehrswerts einer Immobilie. Es ist das am häufigsten angewandte Verfahren in der Immobilienbewertung und basiert auf dem Vergleichswertverfahren.</p>
 <p>Beim Verkehrswertverfahren wird der Verkehrswert einer Immobilie aufgrund von Vergleichsobjekten ermittelt. Es werden hierbei ähnliche Objekte herangezogen, die in der Nähe der zu bewertenden Immobilie liegen und ähnliche Eigenschaften aufweisen. Diese Vergleichsobjekte müssen in ihrem Zustand, ihrer Größe, Ausstattung, Lage und Nutzungsart ähnlich sein.</p>
@@ -34,5 +34,5 @@
 <p>Das Verkehrswertverfahren eignet sich insbesondere für die Bewertung von Wohnimmobilien und Eigentumswohnungen, aber auch für Gewerbeimmobilien. Es ist ein anerkanntes Verfahren, das von Gerichten und Finanzbehörden zur Ermittlung des Verkehrswerts herangezogen wird.</p>
 <p>Insgesamt bietet das Verkehrswertverfahren eine präzise und objektive Methode zur Bestimmung des Verkehrswerts einer Immobilie. Allerdings ist es wichtig, dass das Verfahren unter Berücksichtigung aller relevanten Faktoren durchgeführt wird, um ein realistisches Ergebnis zu erzielen.</p>
 
-            </section>
+</div>
 @endsection
