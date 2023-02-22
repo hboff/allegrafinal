@@ -15,20 +15,8 @@ use App\Http\Controllers\ContactController;
 */
 
 $routes = [
-    'schimmelpilz',
-    'hauskaufberatung',
-    'baubegleitung',
-    'bauschaden',
-    'energieberatung',
-    'immobilienbewertung',
-    'gutachter',
-    'team',
-    'kontakt',
-    'kosten-preise',
-    'research',
-    'show',
+    'datenschutzerklaerung',
     'impressum',
-    'datenschutzerklaerung' ,
 ];
 
 $domains = [
