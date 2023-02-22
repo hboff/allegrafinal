@@ -17,22 +17,13 @@ class OrteController extends Controller
         $laengengrad = $cityData->laengengrad;
         $breitengrad = $cityData->breitengrad;
 
-        $nearestCities = DB::select(DB::raw("
-            SELECT ort, (
-                3959 * acos (
-                    cos ( radians(?) )
-                    * cos( radians( breitengrad ) )
-                    * cos( radians( laengengrad ) - radians(?) )
-                    + sin ( radians(?) )
-                    * sin( radians( breitengrad ) )
-                )
-            ) AS distance
-            FROM orteDE
-            HAVING distance < 50
-            ORDER BY distance
-            LIMIT 0 , 16
-        "), [$breitengrad, $laengengrad, $breitengrad]);
-
+        $nearestCities = DB::table('orteDE')
+->select('ort', DB::raw("(3959 * acos(cos(radians(?)) * cos(radians(breitengrad)) * cos(radians(laengengrad) - radians(?)) + sin(radians(?)) * sin(radians(breitengrad)))) AS distance"))
+->having('distance', '<', 50)
+->orderBy('distance')
+->limit(16)
+->setBindings([$breitengrad, $laengengrad, $breitengrad])
+->get();
       
         return view('immobilienbewertung', [
             'nearestCities' => $nearestCities,
