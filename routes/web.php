@@ -71,7 +71,7 @@ $routes = [
                })
                ->get();
                
-    return view($route, ['data' => $data, 'expert' => $expert]);
+    return view($route);
     });
     }
     });
