@@ -60,7 +60,7 @@ object-position: center;">
 @foreach ($nearestCities as $city)
 @if($ortsname == $city->ort)
 @else
-<a href="/immobilienbewertung/{{$city->ort}}" class="link-dark">Immobilienbewertung {{$city->ort}}</a>
+<a  class="footer__link" href="/immobilienbewertung/{{$city->ort}}" >Immobilienbewertung {{$city->ort}}</a>
 @endif
 @endforeach
 @endisset  
