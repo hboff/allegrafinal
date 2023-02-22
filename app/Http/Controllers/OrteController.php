@@ -71,10 +71,9 @@ class OrteController extends Controller
             'nearestCities' => $nearestCities,
             'ortsname'=> $ortDE,
             ]);    }  
-}
-//    public function index() {
-//        $status='at';
-//        return view ('index', compact('status'));
-//    }
-//    
-//}
+
+    public function index() {
+        $status='at';
+        return view ('index', compact('status'));
+    }
+ }   
