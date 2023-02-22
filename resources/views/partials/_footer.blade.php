@@ -46,7 +46,7 @@ object-position: center;">
                         
     @foreach($regions as $region)
     @if ($region->Country == 'Germany')
-    <a class="footer__link" href="/{{$region->Region}}">Immobilienbewertung {{$region->Region}}</a><br>
+    <a class="footer__link" href="/immobilienbewertungen/{{$region->Region}}">Immobilienbewertung {{$region->Region}}</a><br>
     @endif
 
     @endforeach
